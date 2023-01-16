@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		E955E6E92975F03300496950 /* MapPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955E6E82975F03300496950 /* MapPlaygroundApp.swift */; };
-		E955E6EB2975F03300496950 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955E6EA2975F03300496950 /* ContentView.swift */; };
 		E955E6F02975F03300496950 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E955E6EF2975F03300496950 /* Preview Assets.xcassets */; };
 		E955E6F72975F13000496950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E955E6F62975F13000496950 /* Assets.xcassets */; };
 		E955E6FC2975F20B00496950 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955E6FB2975F20B00496950 /* Location.swift */; };
 		E955E6FF2975F29800496950 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955E6FE2975F29800496950 /* LocationsDataService.swift */; };
+		E955E7012975F3C700496950 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955E7002975F3C700496950 /* LocationsView.swift */; };
+		E955E7032975F3E500496950 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955E7022975F3E500496950 /* LocationsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E955E6E52975F03300496950 /* MapPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E955E6E82975F03300496950 /* MapPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPlaygroundApp.swift; sourceTree = "<group>"; };
-		E955E6EA2975F03300496950 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E955E6EF2975F03300496950 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E955E6F62975F13000496950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E955E6FB2975F20B00496950 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E955E6FE2975F29800496950 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		E955E7002975F3C700496950 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		E955E7022975F3E500496950 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,6 @@
 				E955E6F82975F1C300496950 /* Views */,
 				E955E6F92975F1CA00496950 /* ViewModels */,
 				E955E6E82975F03300496950 /* MapPlaygroundApp.swift */,
-				E955E6EA2975F03300496950 /* ContentView.swift */,
 				E955E6F62975F13000496950 /* Assets.xcassets */,
 				E955E6EE2975F03300496950 /* Preview Content */,
 			);
@@ -78,6 +79,7 @@
 		E955E6F82975F1C300496950 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E955E7002975F3C700496950 /* LocationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -85,6 +87,7 @@
 		E955E6F92975F1CA00496950 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E955E7022975F3E500496950 /* LocationsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -176,7 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E955E6FF2975F29800496950 /* LocationsDataService.swift in Sources */,
-				E955E6EB2975F03300496950 /* ContentView.swift in Sources */,
+				E955E7032975F3E500496950 /* LocationsViewModel.swift in Sources */,
+				E955E7012975F3C700496950 /* LocationsView.swift in Sources */,
 				E955E6FC2975F20B00496950 /* Location.swift in Sources */,
 				E955E6E92975F03300496950 /* MapPlaygroundApp.swift in Sources */,
 			);
