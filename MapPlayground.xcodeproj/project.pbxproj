@@ -17,6 +17,8 @@
 		E955E70529761D9700496950 /* LocationsViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955E70429761D9700496950 /* LocationsViewComponents.swift */; };
 		E955E70729761E8E00496950 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955E70629761E8E00496950 /* LocationsListView.swift */; };
 		E955E7092976200A00496950 /* LocationsListComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955E7082976200A00496950 /* LocationsListComponents.swift */; };
+		E955E70B2976253F00496950 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955E70A2976253F00496950 /* LocationPreviewView.swift */; };
+		E955E70D2976267F00496950 /* LocationPreviewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955E70C2976267F00496950 /* LocationPreviewComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		E955E70429761D9700496950 /* LocationsViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewComponents.swift; sourceTree = "<group>"; };
 		E955E70629761E8E00496950 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		E955E7082976200A00496950 /* LocationsListComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListComponents.swift; sourceTree = "<group>"; };
+		E955E70A2976253F00496950 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		E955E70C2976267F00496950 /* LocationPreviewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				E955E70429761D9700496950 /* LocationsViewComponents.swift */,
 				E955E70629761E8E00496950 /* LocationsListView.swift */,
 				E955E7082976200A00496950 /* LocationsListComponents.swift */,
+				E955E70A2976253F00496950 /* LocationPreviewView.swift */,
+				E955E70C2976267F00496950 /* LocationPreviewComponents.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 				E955E70729761E8E00496950 /* LocationsListView.swift in Sources */,
 				E955E7032975F3E500496950 /* LocationsViewModel.swift in Sources */,
 				E955E7012975F3C700496950 /* LocationsView.swift in Sources */,
+				E955E70B2976253F00496950 /* LocationPreviewView.swift in Sources */,
 				E955E6FC2975F20B00496950 /* Location.swift in Sources */,
 				E955E6E92975F03300496950 /* MapPlaygroundApp.swift in Sources */,
+				E955E70D2976267F00496950 /* LocationPreviewComponents.swift in Sources */,
 				E955E7092976200A00496950 /* LocationsListComponents.swift in Sources */,
 				E955E70529761D9700496950 /* LocationsViewComponents.swift in Sources */,
 			);

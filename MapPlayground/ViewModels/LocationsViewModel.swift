@@ -35,6 +35,7 @@ class LocationsViewModel: ObservableObject {
         self.updateMapRegion(location: locations.first!)
     }
     
+    // mudar a região do mapa
     private func updateMapRegion(location: Location){
         withAnimation(.easeInOut){
             mapRegion = MKCoordinateRegion(
@@ -43,12 +44,14 @@ class LocationsViewModel: ObservableObject {
         }
     }
     
+    // abrir e fechar a lista com todas localizações
     func toggleLocationsList(){
         withAnimation(.easeInOut){
             showLocationsList.toggle()
         }
     }
     
+    // Indo para a próxima localização ao clicar
     func showNextLocation(location: Location){
         withAnimation(.easeInOut){
             mapLocation = location
@@ -56,4 +59,21 @@ class LocationsViewModel: ObservableObject {
         }
     }
     
+    // Indo para a próxima localização no array
+    func nextButtonPressed(){
+        // pegando o index atual
+        // vendo qual o index é igual ao map location
+        guard let currentIndex = locations.firstIndex(where: {$0 == mapLocation}) else {return}
+        // checando se o index é válido
+        let nextIndex = currentIndex + 1
+        guard locations.indices.contains(nextIndex) else {
+            // se tiver esgotado a quantidade de itens voltar pro primeiro
+            guard let firstLocation = locations.first else {return}
+            showNextLocation(location: firstLocation)
+            return
+        }
+        // o index é válido, indo pra ele
+        let nextLocation = locations[nextIndex]
+        showNextLocation(location: nextLocation)
+    }
 }
