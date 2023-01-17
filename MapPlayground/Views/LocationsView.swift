@@ -15,32 +15,14 @@ struct LocationsView: View {
     
     var body: some View {
         ZStack{
-            Map(coordinateRegion: $vm.mapRegion)
+            mapLayer
                 .ignoresSafeArea()
-            
             VStack{
-                
                 header
                     .padding()
-                
                 Spacer()
-                
-                ZStack{
-                    ForEach(vm.locations) { location in
-                        if vm.mapLocation == location {
-                            // assim colocaria uma em cima da outra, por isso estamos só escolhendo uma
-                            LocationPreviewView(location: location)
-                                .shadow(color: Color.black.opacity(0.2), radius: 20)
-                                .padding()
-                                .transition(.asymmetric(
-                                    insertion: .move(edge: .trailing),
-                                    removal: .move(edge: .leading)))
-                        }
-                        
-                    }
-                }
+                locationPreviewStack
             }
-            
         }
     }
 }
