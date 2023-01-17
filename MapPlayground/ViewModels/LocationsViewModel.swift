@@ -20,10 +20,13 @@ class LocationsViewModel: ObservableObject {
         }
     }
     
+    // Região atual no mapa
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
-    
     // O zoom
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    
+    // mostra lista de localizações
+    @Published var showLocationsList: Bool = false
     
     init() {
         let locations = LocationsDataService.locations
@@ -40,7 +43,17 @@ class LocationsViewModel: ObservableObject {
         }
     }
     
+    func toggleLocationsList(){
+        withAnimation(.easeInOut){
+            showLocationsList.toggle()
+        }
+    }
     
-    
+    func showNextLocation(location: Location){
+        withAnimation(.easeInOut){
+            mapLocation = location
+            showLocationsList = false
+        }
+    }
     
 }

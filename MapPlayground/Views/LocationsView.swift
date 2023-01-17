@@ -10,13 +10,23 @@ import MapKit
 
 struct LocationsView: View {
     
-    @EnvironmentObject private var vm: LocationsViewModel 
+    @EnvironmentObject var vm: LocationsViewModel
     
     
     var body: some View {
         ZStack{
             Map(coordinateRegion: $vm.mapRegion)
                 .ignoresSafeArea()
+            
+            VStack{
+                
+                header
+                .padding()
+                
+                Spacer()
+                
+            }
+            
         }
     }
 }
