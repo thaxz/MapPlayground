@@ -11,7 +11,7 @@ import MapKit
 struct LocationsView: View {
     
     @EnvironmentObject var vm: LocationsViewModel
-    
+    let maxWidthForiPad: CGFloat = 700
     
     var body: some View {
         ZStack{
@@ -20,6 +20,7 @@ struct LocationsView: View {
             VStack{
                 header
                     .padding()
+                    .frame(maxWidth: maxWidthForiPad)
                 Spacer()
                 locationPreviewStack
             }

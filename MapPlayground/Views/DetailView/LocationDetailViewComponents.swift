@@ -19,7 +19,8 @@ extension LocationDetailView {
                     .resizable()
                     .scaledToFill()
                 // para cortar do tamanho da tab
-                    .frame(width: UIScreen.main.bounds.width)
+                // se for pro iPad é uma, se não, outra
+                    .frame(width: UIDevice.current.userInterfaceIdiom == .pad ? nil : UIScreen.main.bounds.width)
                     .clipped()
             }
         }
