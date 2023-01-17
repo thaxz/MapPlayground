@@ -24,9 +24,10 @@ class LocationsViewModel: ObservableObject {
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     // O zoom
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-    
     // mostra lista de localizações
     @Published var showLocationsList: Bool = false
+    // mostrando a sheet das locations
+    @Published var sheetLocation: Location? = nil
     
     init() {
         let locations = LocationsDataService.locations

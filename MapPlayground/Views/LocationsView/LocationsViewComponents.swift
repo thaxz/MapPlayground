@@ -71,7 +71,6 @@ extension LocationsView {
                             insertion: .move(edge: .trailing),
                             removal: .move(edge: .leading)))
                 }
-                
             }
         }
     }
